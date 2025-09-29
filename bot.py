@@ -10,7 +10,7 @@ import os # Dosya işlemlerini yapmak için os modülünü içeri aktarıyoruz
 
 # ÖRNEK:
 # from config import TOKEN 
-TOKEN = "MTM2NjQ3MTQyMzI0MTIyODMyOQ.GhS9nu.axdRqbphQ0vNeDJUmX808Ton2SLNQzw7HszNuk" # Eğer config.py'de yoksa burayı kullanın
+TOKEN = "" # Eğer config.py'de yoksa burayı kullanın
 
 # Burası Discord Intents'i doğru şekilde almanız için
 intents = discord.Intents.default()
@@ -69,4 +69,5 @@ async def create_img(ctx, *, prompt: str):
             os.remove(file_name)
             
 # Botu çalıştırıyoruz
+
 bot.run(TOKEN)
